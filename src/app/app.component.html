@@ -1,0 +1,33 @@
+<main class="main">
+  <div class="navbar"><app-navbar [routes]="myRoutes"></app-navbar></div>
+  <div class="wrapper">
+    <div>
+      <router-outlet class="content"/>
+
+    </div>
+    <footer>
+      <div class="child">
+        <h6>Site</h6>
+          @for(route of myRoutes; track route.path){
+            <a [routerLink]="[route.path]">{{route.path}}</a>
+            <br>
+          }
+      </div>
+
+      <div class="child">
+        <h6>Contact</h6>
+        <p>Write me to dev&#64;pablofemenia.com </p>
+        <a href="http://github.com/pablf">GitHub</a>
+        <br>
+        <a href="http://www.linkedin.com">LinkedIn</a>
+      </div>
+      
+      <div class="child" style="align-self: flex-end;">
+        <p>© by Pablo Femenía</p>
+
+      </div>
+      </footer>
+  </div>
+  
+  
+</main>

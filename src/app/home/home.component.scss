@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+.some-margin {
+    margin: 2%;
+    padding: 2%;
+}
+
+
+.child {
+  min-width: 20%;
+  max-width: 100%;
+}
+
+/* Scroller styling */
+@import "../../defaults.scss";
+.scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 7em;
+  }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    font-weight: bold;
+    
+  }
+  @keyframes slide {
+    0% {
+      top: 0em;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+  }

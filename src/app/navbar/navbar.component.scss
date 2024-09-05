@@ -1,0 +1,80 @@
+@import "../../defaults.scss";
+
+.full-header {
+    background: linear-gradient(40deg, rgba(113, 135, 255, 0.171) 0%,rgba(64, 129, 172, 0.089) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.63), inset 0 0 1px rgba(48, 6, 238, 0.384);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+.header-name {
+    text-align: left;
+    color: $font-color;
+    font-size: $size-font-big;
+    font-family: 'Ostrich';
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Buttons of navbar */
+.button {
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+
+    text-shadow: 0 1px 0 #ffffff;
+    color: rgba(215, 219, 255, 0.7);
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 50%;
+
+}
+
+.button:hover {
+    color: rgba(212, 212, 212, 0.7);
+}
+
+.button:hover .whenActive {
+    color:#ffaf03;
+    visibility: visible;
+    display:block;
+}
+
+.whenActive {
+    visibility: hidden;
+    text-align: center;
+    align-self: center;
+}
+
+.active .whenActive {
+    display: block;
+    visibility: visible;
+}
+
+.active {
+    color: $font-color;
+}

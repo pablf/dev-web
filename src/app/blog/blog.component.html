@@ -1,0 +1,14 @@
+<div class="blog">
+    @for (entry of entries; track entry.title) {
+        <div class="content">
+            <h3 class="child">{{entry.title}}</h3>
+            <h4 class="child right">{{entry.date.getDay()}} {{entry.date.toLocaleString('en', { month: 'long' })}} {{entry.date.getFullYear()}}</h4>
+        </div>
+        @for (section of entry.sections; track section.title) {
+            <h6>{{section.title}}</h6>
+            @for (paragraph of section.paragraphs; track paragraph) {
+                <p>{{paragraph}}</p>
+            }
+        }
+    }
+</div>

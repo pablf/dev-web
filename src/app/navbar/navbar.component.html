@@ -1,0 +1,21 @@
+
+<nav>
+    <div class="full-header">
+        <a class="header-name child left" routerLink="me">Pablo Femenia</a>
+        <div class="child"></div>
+        <ul class="child right">
+            @for(route of routes; track route.path) {
+                <a class="button child" [routerLink]="[route.path]" routerLinkActive="active">
+                    <div>
+                        
+                        <div class="whenActive">&#x25C6;</div>
+                        
+                        {{route.path!}}
+                    </div>
+                </a>
+            }
+        </ul>
+    </div>
+    
+</nav>
+  

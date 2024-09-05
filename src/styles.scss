@@ -1,0 +1,91 @@
+@import "./defaults.scss";
+
+/* Fonts */
+@font-face {
+    font-family: 'Ostrich';
+    src: local('Ostrich'), url('./fonts/OstrichSans-Black.otf');
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: local('Exo'), url('./fonts/Exo-VariableFont_wght.ttf');
+}
+
+/* Main parts */
+html {
+    background-color: $background;
+    position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    border: 2%;
+    height: 100%;
+    width: 100%
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    color: $font-color-footer;
+    background-color: $background-footer;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+/* Small elements */
+h1, h2, h3, h4 {
+    color: $font-color;
+    font-family:'Ostrich';
+}
+h1 {
+    font-size: $size-font-big;
+}
+h2 {
+    font-size: $size-font-big - 2vw;
+}
+h3, h4 {
+    font-size: $size-font-big - 3vw;
+}
+
+h6, p, a {
+    font-family: 'Exo';
+    font-size: $size-font-small;
+    color: $font-color
+}
+
+a {
+    text-decoration: none;
+    box-sizing: border-box;
+    color:$font-color;
+}
+
+/* Qualifiers for flex and aligning */
+.child {
+    flex: 1
+}
+
+.right {
+    text-align: right;
+}
+
+.content {
+    margin: 0 5% 0 5%;
+}
+
+
+/* Change font size */
+.big-font {
+    font-size: 3vh;
+}

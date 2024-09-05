@@ -1,0 +1,27 @@
+@import "../../defaults.scss";
+
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.left {
+    align-self: center;
+}
+
+hr {
+    color: $divisor-color2;
+    border-top: 1px solid $divisor-color2;
+    border-radius: 1px;
+    width: 95%;
+  }

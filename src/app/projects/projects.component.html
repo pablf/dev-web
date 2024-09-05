@@ -1,0 +1,34 @@
+<div>
+    <p>Here you can find some of my projects.</p>
+    <div class="content">
+        @for(project of projects; track project.name) {
+            @if(project.public){
+                <hr>
+
+                <div class="project">
+                    <div class="left child">
+                        <h4>{{project.name}}</h4>
+                    </div>
+    
+                    
+                    <div class="right child">
+                        <a href={{mkHref(project)}}>Repository</a>
+                    </div>
+                </div>
+                @if(project.frameworks.length == 0) {
+                    <p>Languages: {{project.languages.join(", ")}}</p>
+                } @else {
+                    <div class="project">
+                        <p class="left child">Languages: {{project.languages.join(", ")}}</p>
+                        <p class="right child">Frameworks: {{project.frameworks.join(", ")}}</p>
+                    </div>
+                }
+                <div><p>{{project.description}}</p></div>
+            }
+            
+        }
+        <hr>
+        
+    </div>
+</div>
+
