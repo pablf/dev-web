@@ -23,7 +23,7 @@ export class BlogComponent {
   entries: BlogEntry[] = [
     {
       title: "A time-series volatility library?",
-      date: new Date('2023-09-05'),
+      date: new Date(2024, 9, 5),
       sections: [
         {
           title: "timers",
