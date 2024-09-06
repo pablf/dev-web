@@ -9,7 +9,7 @@ export interface Project {
     public: boolean;
   };
 
-export let myProjects: Project[] = [
+export const myProjects: Project[] = [
     {
         name: "teseo",
         languages: ["Scala"],

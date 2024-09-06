@@ -1,3 +1,5 @@
+@import "../../defaults.scss";
+
 .container {
     display: flex;
     flex-direction: row;
@@ -15,13 +17,13 @@
 }
 
 /* Scroller styling */
-@import "../../defaults.scss";
 .scroller {
     height: 1.2em;
     line-height: 1.2em;
     position: relative;
     overflow: hidden;
     width: 7em;
+    color: $contrast-color
   }
   .scroller > span {
     position: absolute;
@@ -34,13 +36,10 @@
     0% {
       top: 0em;
     }
-    25% {
+    33% {
       top: -1.2em;
     }
-    50% {
+    67% {
       top: -2.4em;
-    }
-    75% {
-      top: -3.6em;
     }
   }

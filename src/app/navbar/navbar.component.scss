@@ -59,7 +59,7 @@ nav ul {
 }
 
 .button:hover .whenActive {
-    color:#ffaf03;
+    color: $contrast-color;
     visibility: visible;
     display:block;
 }

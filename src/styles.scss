@@ -45,7 +45,7 @@ footer {
 }
 
 /* Small elements */
-h1, h2, h3, h4 {
+h1, h2 {
     color: $font-color;
     font-family:'Ostrich';
 }
@@ -55,7 +55,10 @@ h1 {
 h2 {
     font-size: $size-font-big - 2vw;
 }
+
 h3, h4 {
+    color: $contrast-color;
+    font-family:'Ostrich';
     font-size: $size-font-big - 3vw;
 }
 
